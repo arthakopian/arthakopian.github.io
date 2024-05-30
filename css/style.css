@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, :active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 900px;
+  margin: 0px auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  box-shadow: 0 0 10px 0 #363333;
+  color: #504d4d;
+  position: relative;
+  min-height: 100%;
+  line-height: normal;
+}
+
+.personal-info {
+  position: absolute;
+  margin-top: 50px;
+  background: #f6f6f6;
+  display: flex;
+  max-width: 900px;
+}
+
+img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 3px solid rgb(46, 45, 45);
+  margin: 30px 50px;
+}
+
+.text-fullname {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  padding: 50px 190px 0 70px;
+}
+
+.text-jobtitle {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 15px 0 0 70px;
+}
+
+.text-contact {
+  font-size: 12px;
+  padding: 30px 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-contact div {
+  position: relative;
+  padding: 0 0 15px 25px;
+  flex-basis: 50%;
+  letter-spacing: 2px;
+}
+.text-contact div ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 5px;
+  height: 5px;
+}
+
+.text-contact--address {
+  background: url(..//img/location\ icon.png) 0 0/17px auto no-repeat;
+}
+
+.text-contact--mail {
+  background: url(..//img/mail\ icon.png) 0 0/17px auto no-repeat;
+}
+
+.text-contact--phone {
+  background: url(..//img/phone\ icon.png) 0 0/23px auto no-repeat;
+}
+
+.text-contact--facebook {
+  background: url(..//img/browser\ icon.png) 0 0/17px auto no-repeat;
+}
+.text-contact--facebook a {
+  color: #504d4d;
+}
+
+.personal-skills {
+  background: #504d4d;
+  flex: 2;
+  flex-direction: column;
+  color: #f6f6f6;
+  letter-spacing: 1px;
+  padding: 350px 0 50px 50px;
+}
+.personal-skills h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.personal-skills ul {
+  padding-bottom: 35px;
+  line-height: 25px;
+}
+.personal-skills ul li {
+  position: relative;
+  padding-left: 20px;
+}
+.personal-skills ul li::before {
+  position: absolute;
+  content: "";
+  background-color: #f6f6f6;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  left: 0;
+  top: 8px;
+}
+
+.about {
+  flex-direction: column;
+  letter-spacing: 1px;
+  padding: 350px 50px 50px 50px;
+  background: #FFF;
+  flex: 4;
+  line-height: 25px;
+}
+.about div {
+  padding-bottom: 50px;
+}
+.about h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.work-title {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+}
